@@ -578,8 +578,8 @@
         <div class="gallery-wrapper">
             <img id="galleryImage" class="gallery-image" src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=800&h=500&fit=crop" alt="Oso polar en su hábitat">
             <div class="gallery-controls">
-                <button class="gallery-btn" onclick="previousImage()">← Anterior</button>
-                <button class="gallery-btn" onclick="nextImage()">Siguiente →</button>
+                <button class="gallery-btn" onclick="previousImage()"><span>← Anterior</span></button>
+                <button class="gallery-btn" onclick="nextImage()"><span>Siguiente →</span></button>
             </div>
             <div class="gallery-counter">
                 <span id="currentImage">1</span> / <span id="totalImages">6</span>
@@ -677,13 +677,20 @@
         });
 
         // ==================== CONFIGURACIÓN DE GALERÍA ====================
+        // 6 IMÁGENES DE OSOS POLARES EN DIFERENTES SITUACIONES:
+        // 1. Oso polar en su hábitat natural
+        // 2. Oso polar nadando en el agua ártica
+        // 3. Oso polar madre con cachorros
+        // 4. Oso polar caminando sobre hielo
+        // 5. Oso polar buscando alimento
+        // 6. Oso polar descansando en el hielo
         const images = [
-            "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=800&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1551508881-b72b27e84530?w=800&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1500046212386-e547bfd8c8f6?w=800&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=800&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1533241749412-86a278bb6d63?w=800&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1540573133985-87b6da08cbf7?w=800&h=500&fit=crop"
+            "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=800&h=500&fit=crop",   // Oso polar en hábitat
+            "https://images.unsplash.com/photo-1500046212386-e547bfd8c8f6?w=800&h=500&fit=crop",   // Oso polar nadando
+            "https://images.unsplash.com/photo-1540573133985-87b6da08cbf7?w=800&h=500&fit=crop",   // Oso polar con cachorros
+            "https://images.unsplash.com/photo-1551508881-b72b27e84530?w=800&h=500&fit=crop",     // Oso polar en hielo
+            "https://images.unsplash.com/photo-1533241749412-86a278bb6d63?w=800&h=500&fit=crop",  // Oso polar buscando
+            "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=800&h=500&fit=crop"   // Oso polar descansando
         ];
 
         let currentIndex = 0;
